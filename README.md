@@ -15,7 +15,7 @@ A runtime tamper-resistant Secure Boot Finite State Machine (FSM) implemented in
 
 ## Reports (PPA)
 
-The complete design achieves strict timing closure at **100 MHz** on the Artix-7 fabric. High-throughput cryptographic execution is achieved via a **4-stage round pipeline** embedded within the BLAKE2b compression function core.
+The complete design achieves strict timing closure at **100 MHz** on the Artix-7 fabric. High-throughput cryptographic execution is achieved via a **4-stage round pipeline** embedded within the compression function core.
 
 ### Post-Route Physical Implementation Metrics (PPA)
 | Parameter | Metric / Value |
