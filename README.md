@@ -5,7 +5,7 @@ Note: The HDL source code and testbench files are currently maintained in a priv
 
 # Secure Boot Finite State Machine (FSM) with Hardware Security Hardening
 
-A runtime tamper-resistant Secure Boot Finite State Machine (FSM) implemented in SystemVerilog, integrated with a high-performance **BLAKE2b-512 cryptographic hash core** optimized for Xilinx Artix-7 (Basys3) FPGA architectures.
+A runtime tamper-resistant Secure Boot Finite State Machine (FSM) implemented in SystemVerilog, integrated with a high-performance **cryptographic hash core** optimized for Xilinx Artix-7 FPGA architectures.
  
 
 # Block Diagram
@@ -31,7 +31,7 @@ The complete design achieves strict timing closure at **100 MHz** on the Artix-7
 
 ## Verification 
 
-* **Algorithmic Validation:** Fully verified the BLAKE2b-512 core output correctness against golden **RFC 7693** test vectors.
+* **Algorithmic Validation:** Fully verified the hashing core output correctness against standard RFC test vectors
 * **Runtime Fault Injection:** Evaluated FSM resilience against environmental and adversarial disruptions using a directed RTL-level runtime fault injection testbench.
 * **Formal & Behavioral Assertions:** Implemented strict **SystemVerilog Assertions (SVA)** to continuously monitor and guarantee state invariants, parity correctness, and proper handshake sequences during simulation.
 
